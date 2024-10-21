@@ -1,0 +1,24 @@
+<!-- Problem 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2: Numbered List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let namesString = "Pat, Chris, Marlon, Ferncroft, Assunta";
+            let namesArray = namesString.split(", ");
+            let numberedList = "<ul>";
+            namesArray.forEach((name, index) => {
+                numberedList += `<li>${index + 1}. ${name}</li>`;
+            });
+            numberedList += "</ul>";
+            $("body").append(numberedList);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
