@@ -10,8 +10,8 @@
             let namesString = "Pat, Chris, Marlon, Ferncroft, Assunta";
             let namesArray = namesString.split(", ");
             let numberedList = "<ol>";
-            namesArray.forEach((name, index) => {
-                numberedList += `<li>${index + 1}. ${name}</li>`;
+            namesArray.forEach(name => {
+                numberedList += `<li>${name}</li>`;
             });
             numberedList += "</ol>";
             $("body").append(numberedList);
